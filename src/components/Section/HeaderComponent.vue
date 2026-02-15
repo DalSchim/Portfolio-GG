@@ -268,22 +268,68 @@ h1 {
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
+  .Hero {
+    padding-top: 96px; /* un peu moins que 120 */
+    min-height: auto;  /* on laisse le contenu définir la hauteur */
+    padding-bottom: 40px;
+  }
+
   .hero-content {
     flex-direction: column;
     text-align: center;
+    gap: 28px;
+  }
+
+  .subtitle {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 320px; /* au lieu de 550 */
   }
 
   .hero-visual img {
-    width: min(750px, 120%);
-    transform: scale(1.15);
+    width: min(560px, 100%);
+    transform: scale(1.05);
   }
 }
 
 @media (max-width: 480px) {
+  .Hero {
+    padding-top: 88px;
+    padding-bottom: 28px;
+  }
+
+  h1 {
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1.08;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .hero-visual {
+    min-height: 240px;
+  }
+
   .hero-visual img {
-    width: 115%;
-    transform: scale(1.05);
+    width: 100%;
+    transform: scale(1);
   }
 }
+
 
 </style>
