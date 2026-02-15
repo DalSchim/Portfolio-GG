@@ -2,7 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ProjectsPage from '../views/ProjectsPage.vue'
-import ContactView from '../views/ContactView.vue'
+import Contactpage from '../views/Contactpage.vue'
 
 
 const router = createRouter({
@@ -24,7 +24,7 @@ const router = createRouter({
         },
         {
             path: "/contact",
-            component: ContactView
+            component: Contactpage
         }
     ],
 })
