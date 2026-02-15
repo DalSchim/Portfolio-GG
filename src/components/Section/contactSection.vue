@@ -15,7 +15,7 @@
             Contact
           </router-link>
 
-          <a href="https://github.com/TON_USERNAME" target="_blank" class="btn ghost" draggable="false">
+          <a href="https://github.com/DalSchim" target="_blank" class="btn ghost" draggable="false">
             GitHub
           </a>
         </div>
