@@ -88,7 +88,7 @@ const featured = computed(() => {
     <div class="container">
       <div class="head">
         <h2>Projets sélectionnés</h2>
-        <router-link to="/Projects" class="see-all">Voir tout →</router-link>
+        <router-link to="/Projects" class="see-all" draggable="false">Voir tout →</router-link>
       </div>
 
       <div v-if="loading" class="state">Chargement…</div>
@@ -116,6 +116,7 @@ const featured = computed(() => {
                 :href="liveUrl(r)"
                 target="_blank"
                 rel="noreferrer"
+                draggable="false"
             >
               Live
             </a>
@@ -125,6 +126,7 @@ const featured = computed(() => {
                 :href="r.html_url"
                 target="_blank"
                 rel="noreferrer"
+                draggable="false"
             >
               Repo
             </a>

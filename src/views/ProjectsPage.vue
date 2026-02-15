@@ -166,6 +166,7 @@ const langBadge = (lang: string) => ICONS[lang] ?? lang.slice(0, 3).toUpperCase(
                 :href="liveUrl(r)"
                 target="_blank"
                 rel="noreferrer"
+                draggable="false"
             >
               Live
             </a>
@@ -175,6 +176,7 @@ const langBadge = (lang: string) => ICONS[lang] ?? lang.slice(0, 3).toUpperCase(
                 :href="r.html_url"
                 target="_blank"
                 rel="noreferrer"
+                draggable="false"
             >
               Repo
             </a>

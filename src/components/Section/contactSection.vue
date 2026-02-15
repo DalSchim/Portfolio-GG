@@ -11,11 +11,11 @@
         </p>
 
         <div class="actions">
-          <router-link to="/contact" class="btn primary">
+          <router-link to="/contact" class="btn primary" draggable="false">
             Contact
           </router-link>
 
-          <a href="https://github.com/TON_USERNAME" target="_blank" class="btn ghost">
+          <a href="https://github.com/TON_USERNAME" target="_blank" class="btn ghost" draggable="false">
             GitHub
           </a>
         </div>

@@ -7,6 +7,27 @@
 }
 
 
+    * {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+
+
+    /* Prevent image drag */
+    img {
+        -webkit-user-drag: none;
+        user-drag: none;
+        pointer-events: none;
+    }
+
+    button {
+        -webkit-user-drag: none;
+    }
+
+
 body{
     margin:0;
     padding: 0;

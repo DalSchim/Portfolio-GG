@@ -10,7 +10,7 @@
         et performance technique.
       </p>
 
-      <router-link to="/About" class="btn">
+      <router-link to="/About" class="btn" draggable="false">
         En savoir plus →
       </router-link>
     </div>

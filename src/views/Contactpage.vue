@@ -24,7 +24,7 @@
           <textarea v-model.trim="form.message" rows="6" required></textarea>
         </div>
 
-        <button type="submit" :disabled="loading">
+        <button type="submit" :disabled="false" draggable="false">
           {{ loading ? "Envoi..." : "Envoyer" }}
         </button>
 

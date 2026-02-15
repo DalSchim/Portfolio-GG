@@ -23,14 +23,14 @@ const closeMenu = () => {
 
       <!-- Desktop links -->
       <ul class="menu-desktop">
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/About">About</router-link></li>
-        <li><router-link to="/Projects">Projects</router-link></li>
+        <li><router-link to="/" draggable="false">Home</router-link></li>
+        <li><router-link to="/About" draggable="false">About</router-link></li>
+        <li><router-link to="/Projects" draggable="false">Projects</router-link></li>
       </ul>
 
       <!-- Actions -->
       <div class="actions">
-        <router-link to="/contact" class="contact-btn">
+        <router-link to="/contact" class="contact-btn" draggable="false">
           Contact
         </router-link>
 
@@ -48,10 +48,10 @@ const closeMenu = () => {
 
       <!-- Mobile panel -->
       <div class="menu-mobile" :class="{ open: isOpen }">
-        <router-link to="/" @click="closeMenu">Home</router-link>
-        <router-link to="/About" @click="closeMenu">About</router-link>
-        <router-link to="/Projects" @click="closeMenu">Projects</router-link>
-        <button class="contact-btn mobile" type="button" @click="closeMenu">
+        <router-link to="/" @click="closeMenu" draggable="false">Home</router-link>
+        <router-link to="/About" @click="closeMenu" draggable="false">About</router-link>
+        <router-link to="/Projects" @click="closeMenu" draggable="false">Projects</router-link>
+        <button class="contact-btn mobile" type="button" @click="closeMenu" draggable="false">
           Contact
         </button>
       </div>
