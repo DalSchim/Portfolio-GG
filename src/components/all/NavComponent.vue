@@ -16,11 +16,12 @@ const closeMenu = () => {
   <div class="NavComponent">
     <nav>
       <!-- Brand -->
+      <router-link to="/">
       <div class="brand">
         <img src="/public/logo.gif" alt="logo" class="logo-img" />
         <span class="logo-text">GGONIDOU</span>
       </div>
-
+      </router-link>
       <!-- Desktop links -->
       <ul class="menu-desktop">
         <li><router-link to="/" draggable="false">Home</router-link></li>
