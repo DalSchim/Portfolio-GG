@@ -16,7 +16,7 @@ const closeMenu = () => {
   <div class="NavComponent">
     <nav>
       <!-- Brand -->
-      <router-link to="/">
+      <router-link to="/" class="logo-link">
       <div class="brand">
         <img src="/public/logo.gif" alt="logo" class="logo-img" />
         <span class="logo-text">GGONIDOU</span>
@@ -61,6 +61,12 @@ const closeMenu = () => {
 </template>
 
 <style scoped lang="scss">
+
+.logo-link{
+  text-decoration: none;
+}
+
+
 .NavComponent {
   position: fixed;
   top: 18px;
