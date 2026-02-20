@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
 
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 /* Gradients */
