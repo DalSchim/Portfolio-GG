@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
 import HeaderComponent from "@/components/Section/HeaderComponent.vue";
-
 import ProjectsSection from "@/components/Section/ProjectsSection.vue";
 import MiniAbout from "@/components/Section/MiniAbout.vue";
 import MettodSection from "@/components/Section/MettodSection.vue";
@@ -12,11 +11,19 @@ import FooterSection from "@/components/Section/FooterSection.vue";
 </script>
 
 <template>
-  <HeaderComponent/>
-  <mini-about/>
-  <mettod-section/>
-  <projects-section/>
-  <impact-section/>
-  <contact-section/>
-  <footer-section/>
+  <section class="HomePage">
+    <HeaderComponent/>
+    <mini-about/>
+    <mettod-section/>
+    <projects-section/>
+    <impact-section/>
+    <contact-section/>
+    <footer-section/>
+  </section>
 </template>
+
+<style scoped lang="scss">
+.HomePage {
+  min-height: 100vh;
+}
+</style>
